@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "AutoAccept - LinkedIn",
+  "description": "This extension opens LinkedIn in new tab and auto accept all invitations",
+  "version": "1.0",
+  "homepage_url": "https://www.linkedin.com",
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icons/icon32.png",
+    "default_title": "AutoAccept LinkedIn"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "<all_urls>"
+  ],
+  "icons": {
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
