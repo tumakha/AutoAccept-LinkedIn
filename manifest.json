@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "AutoAccept - LinkedIn",
-  "description": "This extension opens LinkedIn in new tab and auto accept all invitations",
+  "description": "This extension opens LinkedIn page in new tab and auto accept all invitations",
   "version": "1.0",
   "homepage_url": "https://www.linkedin.com",
   "background": {
