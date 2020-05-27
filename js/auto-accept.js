@@ -8,10 +8,10 @@ if (document.querySelector("[class='mn-invitation-manager__no-invites']")) {
   sendMoreInvitations(false);
   document.querySelector("[class='mn-invitation-manager__no-invite-text']").style.color = "red";
 } else {
-  document.getElementById("contact-select-checkbox").click();
+  var buttons = document.querySelectorAll(".invitation-card__action-btn.artdeco-button--secondary")
+  buttons.forEach(btn => btn.click());
 
   setTimeout(function() {
-    document.querySelector("[data-control-name='accept_all']").click();
     sendMoreInvitations(true);
   }, 2000);
 }
