@@ -4,9 +4,9 @@ function sendMoreInvitations(hasMoreInvitations) {
   });
 }
 
-if (document.querySelector("[class='mn-invitation-manager__no-invites']")) {
+if (document.querySelector(".mn-invitation-manager__no-invites")) {
   sendMoreInvitations(false);
-  document.querySelector("[class='mn-invitation-manager__no-invite-text']").style.color = "red";
+  document.querySelector(".mn-invitation-manager__no-invite-text").style.color = "red";
 } else {
   var buttons = document.querySelectorAll(".invitation-card__action-btn.artdeco-button--secondary")
   buttons.forEach(btn => btn.click());
