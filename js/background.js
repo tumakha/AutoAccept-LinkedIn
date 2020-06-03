@@ -6,8 +6,7 @@ var tabId = 0;
 chrome.browserAction.setBadgeText({text: ""});
 
 function runScript() {
-  chrome.tabs.executeScript(tabId, {file: "js/auto-accept.js"}, function() {
-  });
+  chrome.tabs.executeScript(tabId, {file: "js/auto-accept.js"});
 }
 
 chrome.browserAction.onClicked.addListener(function() {
