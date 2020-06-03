@@ -21,7 +21,7 @@ chrome.runtime.onMessage.addListener(function(msg, _, sendResponse) {
   if (msg.moreInvitations) {
     chrome.tabs.reload(tabId)
     setTimeout(function() {
-      runScript()
+      runScript();
     }, 3000);
   } else {
     chrome.browserAction.setBadgeText({text: ""});
